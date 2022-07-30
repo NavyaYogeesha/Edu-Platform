@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Edu-Platform/static/css/main.257f6bc0.css",
+    "main.js": "/Edu-Platform/static/js/main.afa9ea5f.js",
+    "static/js/787.51cece05.chunk.js": "/Edu-Platform/static/js/787.51cece05.chunk.js",
+    "static/media/quotes.svg": "/Edu-Platform/static/media/quotes.157d43772ab6e00c5f00.svg",
+    "index.html": "/Edu-Platform/index.html",
+    "main.257f6bc0.css.map": "/Edu-Platform/static/css/main.257f6bc0.css.map",
+    "main.afa9ea5f.js.map": "/Edu-Platform/static/js/main.afa9ea5f.js.map",
+    "787.51cece05.chunk.js.map": "/Edu-Platform/static/js/787.51cece05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.257f6bc0.css",
+    "static/js/main.afa9ea5f.js"
+  ]
+}
