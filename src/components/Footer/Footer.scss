@@ -1,0 +1,108 @@
+@import "../../variables.scss";
+.education-platform {
+  &__footer {
+    background-color: #2e2100;
+    display: flex;
+    justify-content: center;
+    color: $color-white;
+    &__container {
+      margin-top: 100px;
+    }
+    &__first-row {
+      display: flex;
+      border-bottom: 1px solid $color-secondary;
+      padding-bottom: 20px;
+      justify-content: space-between;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      &--left {
+        flex: 0 1 30%;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+        h5 {
+          font-family: "Sen", sans-serif;
+          font-weight: 700;
+          font-size: 24px;
+          margin: 0;
+          span {
+            border: 0;
+            border-radius: 50%;
+            color: $color-orange;
+            padding: 0 5px 0;
+            margin-left: 0;
+          }
+        }
+        p {
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: $color-gray;
+        }
+      }
+      &--right {
+        flex: 0 1 65%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          text-align: left;
+          flex-direction: row;
+        }
+        @media (min-width: 1024px) {
+          flex: 0 1 60%;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+        .footer-item {
+          margin-top: 30px;
+          @media (min-width: 768px) {
+            margin-top: 0;
+          }
+          h4 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            border-bottom: 1px solid $color-secondary;
+            margin: 0;
+            padding-bottom: 20px;
+          }
+          li {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: $color-gray;
+            margin-top: 15px;
+            span {
+              font-weight: 600;
+              color: $color-white;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+    &__second-row {
+      padding: 10px 0;
+    }
+    .social-icons {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        @media (min-width: 768px) {
+          justify-content: flex-start;
+        }
+        li {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

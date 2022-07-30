@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+.education-platform {
+  &__header {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 35px 0;
+      justify-content: center;
+      @media (min-width: 768px) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+    }
+    &__left {
+      h1 {
+        margin: 0;
+        font-family: "Sen", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: $color-primary;
+        span {
+          color: $color-orange;
+        }
+      }
+    }
+    &__right {
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        @media (min-width: 768px) {
+          flex-wrap: nowrap;
+        }
+        li {
+          margin-left: 15px;
+          margin-top: 20px;
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: $color-dark;
+          cursor: pointer;
+          position: relative;
+          &:not(:last-child) {
+            a.active,
+            &:active,
+            &:hover {
+              font-weight: 600;
+              color: $color-primary;
+              &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 50%;
+                left: 0;
+                border-top: 2px solid $color-primary;
+              }
+            }
+          }
+          @media (min-width: 768px) {
+            margin: 0 0 0 45px;
+          }
+        }
+        button {
+          background-color: $color-primary;
+          color: $color-white;
+          border-radius: 50px;
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 10px 35px;
+          border: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

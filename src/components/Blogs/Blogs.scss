@@ -1,0 +1,120 @@
+@import "../../variables.scss";
+.education-platform {
+  &__blogs {
+    display: flex;
+    justify-content: center;
+    background-color: #fffcf4;
+    padding-bottom: 75px;
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-family: "Sen", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        color: $color-primary;
+        margin-bottom: 0;
+      }
+      p {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-dark;
+        margin-bottom: 50px;
+        @media (min-width: 768px) {
+          width: 25%;
+        }
+      }
+    }
+    &__items {
+      background-color: $color-white;
+      border-radius: 12px;
+      img {
+        width: 100%;
+      }
+      .blog_body {
+        background-color: $color-white;
+        text-align: left;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+        padding-bottom: 20px;
+        border-radius: 12px;
+      }
+      .blog-date {
+        span {
+          margin-left: 10px;
+          padding-bottom: 5px;
+          padding-right: 20px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: $color-dark;
+          text-align: left;
+          border-bottom: 1px solid #e2dfda;
+          span {
+            border: 0;
+            border-radius: 50%;
+            color: $color-orange;
+            font-size: 30px;
+            padding: 0 5px 0;
+            margin-left: 0;
+          }
+        }
+      }
+      .blog-desc {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: $color-primary;
+        text-align: left;
+        padding: 0 20px;
+      }
+      .blog-actions {
+        padding: 0 20px;
+        button {
+          height: 50px;
+          width: 120px;
+          border-radius: 25px;
+          border: 0;
+          color: $color-white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          cursor: pointer;
+          background: $color-primary;
+          &:hover {
+            background: $color-orange;
+          }
+        }
+      }
+    }
+    .carousel__dot {
+      background-color: #634700;
+      border-radius: 50%;
+      padding: 5px;
+      margin-left: 5px;
+      border: 0;
+      &.carousel__dot--selected {
+        background-color: $color-orange;
+      }
+    }
+
+    .carousel__slide--visible,
+    .carousel__slide--hidden {
+      padding: 0 !important;
+      margin: 0 10px;
+      width: 15.9% !important;
+      height: 100%;
+    }
+    .carousel__inner-slide {
+      position: unset;
+      height: 600px;
+    }
+    .carousel__inner-slide,
+    .carousel__slider--horizontal,
+    .carousel__slider-tray--horizontal > div {
+      height: 600px;
+    }
+  }
+}

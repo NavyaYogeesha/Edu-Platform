@@ -1,0 +1,221 @@
+@import "../../variables.scss";
+.education-platform {
+  &__home {
+    background-color: #fffcf4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  &__herobanner {
+    @media (min-width: 1024px) {
+      margin-top: 30px;
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        margin-bottom: 70px;
+      }
+      img {
+        width: 100%;
+        @media (min-width: 768px) {
+          width: 400px;
+          height: 685px;
+          object-fit: contain;
+        }
+        @media (min-width: 1024px) {
+          width: 470px;
+        }
+      }
+    }
+    &__left {
+      position: relative;
+      flex: 0 1 33%;
+    }
+    &__right {
+      text-align: center;
+      flex: 0 1 50%;
+      padding: 0;
+      @media (min-width: 768px) {
+        padding: 20px;
+        text-align: left;
+      }
+      @media (min-width: 1024px) {
+        padding: 0;
+      }
+      h2 {
+        font-family: "Sen", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: $color-primary;
+        @media (min-width: 1024px) {
+          font-size: 58px;
+        }
+      }
+      .tagline {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $color-dark;
+      }
+      .action-btn {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          align-items: center;
+          flex-direction: row;
+        }
+        button {
+          background: $color-orange;
+          color: $color-white;
+          border-radius: 32px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          border: 0;
+          padding: 20px 35px;
+          @media (min-width: 768px) {
+            margin-right: 45px;
+          }
+        }
+      }
+      .watch-video {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        @media (min-width: 768px) {
+          margin-top: 0;
+        }
+        figure {
+          border-radius: 50%;
+          background: $color-white;
+          box-shadow: 0px 8px 16px 0px #00000012;
+          margin: 0;
+          padding: 10px;
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 12px;
+            height: 12px;
+            object-fit: contain;
+          }
+        }
+        span {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          color: $color-primary;
+        }
+      }
+      .recent-engmnt {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $color-dark;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+      .student-stats {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+        p {
+          font-family: "Sen", sans-serif;
+          font-weight: 700;
+          font-size: 44px;
+          color: $color-primary;
+          margin: 0;
+          @media (min-width: 768px) {
+            margin-right: 60px;
+          }
+        }
+        span {
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: $color-dark;
+        }
+      }
+    }
+    &__stats {
+      background-color: $color-white;
+      width: 270px;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 16px 32px 0px #0000000d;
+      border-radius: 15px;
+      @media (min-width: 1024px) {
+        bottom: 50px;
+        right: -115px;
+        transform: none;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+        @media (min-width: 1024px) {
+          display: flex;
+          flex-direction: column;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+          margin-left: 25px;
+        }
+        figure {
+          border-radius: 50%;
+          margin: 0;
+          padding: 10px;
+          margin-right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:nth-child(1) {
+            background: #fff9e8;
+          }
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+        }
+      }
+      .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          color: $color-primary;
+          padding: 0;
+          margin: 0;
+          &:first-child {
+            font-weight: 400;
+            font-size: 14px;
+            color: $color-dark;
+          }
+        }
+      }
+    }
+  }
+}

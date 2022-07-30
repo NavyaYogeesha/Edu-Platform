@@ -1,0 +1,91 @@
+@import "../../variables.scss";
+.education-platform {
+  &__testimonial {
+    display: flex;
+    justify-content: center;
+    background-color: #2e2100;
+    height: 500px;
+    @media (min-width: 768px) {
+      height: 380px;
+    }
+    &__container {
+      @media (max-width: 1024px) {
+        width: 100% !important;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 380px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      h4 {
+        font-family: "Sen", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: $color-white;
+        margin-bottom: 0;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-gray;
+        margin-bottom: 0;
+      }
+      .carousel__dot {
+        background-color: #634700;
+        border-radius: 50%;
+        padding: 5px;
+        margin-left: 5px;
+        border: 0;
+        &.carousel__dot--selected {
+          background-color: $color-orange;
+        }
+      }
+    }
+    &__left {
+      flex: 0 1 100%;
+      @media (min-width: 768px) {
+        flex: 0 1 40%;
+        text-align: left;
+      }
+    }
+    &__right {
+      flex: 0 1 50%;
+      text-align: left;
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-white;
+        font-style: italic;
+        margin-bottom: 0;
+        position: relative;
+        @media (min-width: 768px) {
+          font-size: 26px;
+        }
+        &:before {
+          content: url("./quotes.svg");
+          position: absolute;
+          left: 0;
+          top: -30px;
+          @media (min-width: 768px) {
+            left: -35px;
+            top: -21px;
+          }
+        }
+      }
+    }
+    .carousel__slide--visible {
+      padding: 0 !important;
+    }
+    .carousel__inner-slide,
+    .carousel__slider--horizontal,
+    .carousel__slider-tray--horizontal > div {
+      height: 380px;
+    }
+  }
+}
